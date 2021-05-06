@@ -6,10 +6,7 @@ Token =os.environ.get("BOT_TOKEN",None)
 updater = Updater( Token ,use_context = True )
 
 def start(updater,context):
- updater.message.reply_text('''Hi i am welcome messanger bot 
-Add me to your group 
- 
- Made with Love ❤️ by @bisnuray
+ updater.message.reply_text('''Made with Love ❤️ by @bisnuray
 
   ''')
 def help(updater,context):
