@@ -9,16 +9,16 @@ def start(updater,context):
  updater.message.reply_text('''Hi iam welcome messanger bot 
 Add me to your group 
  
- Made with Love ❤️ by @lntechnical
+ Made with Love ❤️ by @subeesh005
 
   ''')
 def help(updater,context):
- updater.message.reply_text("Add me to your group ")
+ updater.message.reply_text("Add me to your group http://t.me/iam_comali_bot?startgroup=true ")
  
 
 def add_group(update: Update, context: CallbackContext):
     for member in update.message.new_chat_members:
-        update.message.reply_text(f'Hello {member.full_name} , Welcome to ln support Thank you for Joining  ')
+        update.message.reply_text(f'Hello {member.full_name} , Welcome to The Group Thank you for Joining  ')
 
 add_group_handle = MessageHandler(Filters.status_update.new_chat_members, add_group)
 updater.dispatcher.add_handler(add_group_handle)
